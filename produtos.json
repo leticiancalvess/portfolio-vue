@@ -1,0 +1,27 @@
+{
+  "titles": [
+    {
+      "id": "1",
+      "title": "About Me",
+      "text": "My name is Letícia, I'm 24 years old, majoring in systems analysis and development (3rd period). Currently I work as QA at NTT DATA Brasil, being my first contact with the information technology job market. As a hobby, I study front-end development, especially vue.js.",
+      "titleProjects": "Ranek Project",
+      "descriptionProjects": "The ranek project was developed with Vue.js and REST API.",
+      "imgProjects": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+      "id": "2",
+      "title": "Work",
+      "text": "I work as QA, creating and running tests in API and in legacy systems, as well as the opening and closing of defects. The tools used are: Postman, SoapUI, Oracle SQLDeveloper, HPALM, MOBA and Apache Jmeter.",
+      "titleProjects": "Techno Project",
+      "descriptionProjects": "This is a test.",
+      "img": "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+      "id": "3",
+      "title": "Soft Skills",
+      "text": "I am a creative, proactive and dedicated person, analytical profile and continuous learning. Also, I like building effective team collaboration.",
+      "titleProjects": "Dogs React",
+      "img": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    }
+  ]
+}
