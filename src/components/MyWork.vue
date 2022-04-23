@@ -31,16 +31,21 @@
               </div>
             </div>
 
-            <div v-if="produtos" :key="produtos.id">
-              <div class="services__modal">
-                <div class="services__modal-content">
-                  <i class="bx bx-x services__modal-close"></i>
-                  <img :src="produtos.img" alt="" class="work__img imgModal" />
-                  <h3 class="services__modal-title"></h3>
-                  <p class="services__modal-description">
+            <div v-if="produtos" :key="produtos.id" class="modal">
+              <div class="modal_container">
+                <i class="bx bx-x services__modal-close"></i>
+                <div class="modal_img">
+                  <img :src="produtos.img" alt="" />
+                </div>
+                <div class="modal_dados">
+                  <h2 class="modal_preco">
+                    {{ produtos.titleProjectsEnglish }}
+                  </h2>
+                  <p class="modal_titulo">
                     {{ produtos.descriptionProjectsEnglish }}
                   </p>
-                  <button class="button end" @click="closeModal">CLOSE</button>
+                  <button class="modal_btn">View on Github</button>
+                  <button class="modal_fechar" @click="closeModal">X</button>
                 </div>
               </div>
             </div>
@@ -73,24 +78,31 @@
                 </button>
               </div>
             </div>
-            <div v-if="produtos" :key="produtos.id">
-              <div class="services__modal">
-                <div class="services__modal-content">
-                  <i class="bx bx-x services__modal-close"></i>
-                  <img :src="produtos.img" alt="" class="work__img imgModal" />
-                  <h3 class="services__modal-title"></h3>
-                  <p class="services__modal-description">
+
+            <div v-if="produtos" :key="produtos.id" class="modal">
+              <div class="modal_container">
+                <i class="bx bx-x services__modal-close"></i>
+                <div class="modal_img">
+                  <img :src="produtos.img" alt="" />
+                </div>
+                <div class="modal_dados">
+                  <h2 class="modal_preco">
+                    {{ produtos.titleProjectsPortuguese }}
+                  </h2>
+                  <p class="modal_titulo">
                     {{ produtos.descriptionProjectsPortuguese }}
                   </p>
-                  <button class="button end" @click="closeModal">FECHAR</button>
+                  <button class="modal_btn">Ver no Github</button>
+                  <button class="modal_fechar" @click="closeModal">X</button>
                 </div>
               </div>
             </div>
-            <!-- use the modal component, pass in the prop -->
           </div>
         </div>
       </div>
     </div>
+
+    <!-- use the modal component, pass in the prop -->
   </section>
 </template>
 
@@ -123,10 +135,30 @@ export default {
 
 <style scoped>
 /*=============== SERVICES ===============*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext');
+
+$main-color: #9191e9;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
 
 .skills__content {
   background-color: var(--container-color);
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   border-radius: 1.25rem;
 }
 .skills__container {
@@ -189,40 +221,13 @@ export default {
   font-size: 1rem;
   transition: 0.4s;
 }
-/* Services modal */
-.services__modal {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 2rem 1rem;
-  display: grid;
-  place-items: center;
-  opacity: 1;
-  transition: 0.4s;
-  z-index: var(--z-modal);
-}
-.services__modal-content {
-  position: relative;
-  background-color: white;
-  padding: 4.5rem 1.5rem 2.5rem;
-  border-radius: 1.5rem;
-  width: 50%;
-}
 
-.services__modal-title,
-.services__modal-description {
-  text-align: center;
-}
 .services__modal-title {
-  font-size: var(--h3-font-size);
-  color: var(--first-color);
-  margin-bottom: 1rem;
-}
-
-.services__modal-description {
-  font-size: var(--small-font-size);
+  font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 2rem;
-  color: black;
+  text-transform: uppercase;
+  color: #0a0a0a;
 }
 
 .services__modal-list {
@@ -235,92 +240,118 @@ export default {
   align-items: flex-start;
   column-gap: 0.5rem;
 }
-.services__modal-icon {
-  font-size: 1.5rem;
-  color: var(--first-color);
-}
-.services__modal-info {
-  font-size: var(--small-font-size);
+
+.modal::before {
+  content: '';
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.services__modal-close {
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  padding: 80px;
+}
+
+.modal_container {
+  position: fixed;
+  background: linear-gradient(to right, transparent 250px, white 250px);
+  z-index: 1;
+  display: grid;
+  align-items: end;
+
+  animation: fadeIn 0.3s forwards;
+  width: 50%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3D(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3D(0px, 0, 0);
+  }
+}
+
+.modal_fechar {
+  border-radius: 50%;
+  background-color: var(--first-color);
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 1.5rem;
-  color: var(--first-color);
+  top: -10px;
+  right: -10px;
+  font-size: 1rem;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-.imgModal {
-  width: 50%;
-  margin-left: 25%;
-}
-/*Active modal*/
-.active-modal {
-  opacity: 1;
-  visibility: visible;
-}
-.modal-mask {
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  background-color: hsla(var(--secon-hue), 28%, 16%, 0.7);
-  display: table;
-  transition: opacity 0.3s ease;
+
+.modal_img {
+  grid-column: 1;
+  width: 400px;
+
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.modal-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+.modal_img img {
+  max-width: 400px;
+  display: block;
 }
 
-.modal-container {
-  width: 300px;
-  margin: 0px auto;
-  padding: 20px 30px;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  transition: all 0.3s ease;
-  font-family: Helvetica, Arial, sans-serif;
+.modal_dados {
+  grid-column: 2;
+  width: 400px;
+  height: 100%;
+}
+.modal_preco {
+  color: var(--first-color);
+  margin: 50px;
+}
+.modal_titulo {
+  font-size: 1.3rem;
+  margin-top: 50px;
 }
 
-.modal-header h3 {
-  margin-top: 0;
-  color: #42b983;
+.modal_btn {
+  margin-top: 80px;
+  background: var(--first-color);
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 0.5rem;
 }
 
-.modal-body {
-  margin: 20px 0;
-}
-
-.modal-default-button {
-  float: right;
-}
-
-/*
- * The following styles are auto-applied to elements with
- * transition="modal" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the modal transition by editing
- * these styles.
- */
-
-.modal-enter {
-  opacity: 0;
-}
-
-.modal-leave-active {
-  opacity: 0;
-}
-
-.modal-enter .modal-container,
-.modal-leave-active .modal-container {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+@media screen and (max-width: 1400px) {
+  .modal_dados {
+    grid-column: 2;
+    width: 300px;
+  }
+  .modal_img {
+    width: 330px;
+  }
+  .modal_img img {
+    width: 330px;
+  }
+  .modal_preco {
+    color: var(--first-color);
+    margin-left: 10px;
+  }
+  .modal_titulo {
+    margin-left: -10px;
+    font-size: 1.3rem;
+    margin-top: 50px;
+  }
 }
 </style>

@@ -37,7 +37,7 @@
                 <h3 class="skills__name">
                   <fa icon="check" class="iconClass" />Bootstrap
                 </h3>
-                <span class="skills__level">Intermediate</span>
+                <span class="skills__level">Advanced</span>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@
               <i class="bx bxs-badge-check"></i>
               <div>
                 <h3 class="skills__name">
-                  <fa icon="check" class="iconClass" />Bootstrap
+                  <fa icon="check" class="iconClass" />Javascript
                 </h3>
                 <span class="skills__level">Intermediate</span>
               </div>

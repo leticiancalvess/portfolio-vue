@@ -7,23 +7,26 @@
       >
         <span class="home__greeting">Hello! I'm</span>
         <h1 class="home__name">Letícia</h1>
-        <h3 class="home__education">Frontend Developer | QA</h3>
+        <h3 class="home__education">Front-end Developer | QA</h3>
 
         <div class="home__buttons">
-          <a download="" href="assets/img/cv.pdf" class="button button--ghost">
+          <a download="" href="../assets/cv.pdf" class="button button--ghost">
             Downlad CV
           </a>
           <a href="#about" class="button">About me</a>
         </div>
       </div>
 
-      <div class="home__data" v-if="mudarIdiomaPortugues">
+      <div
+        class="home__data animate__animated animate__fadeInDown"
+        v-if="mudarIdiomaPortugues"
+      >
         <span class="home__greeting">Olá! Eu sou a </span>
         <h1 class="home__name">Letícia</h1>
-        <h3 class="home__education">Frontend Developer | QA</h3>
+        <h3 class="home__education">Front-end Developer | QA</h3>
 
         <div class="home__buttons">
-          <a download="" href="assets/img/cv.pdf" class="button button--ghost">
+          <a download="" href="../assets/cv.pdf" class="button button--ghost">
             Downlad CV
           </a>
           <a href="#about" class="button">Sobre Mim</a>
@@ -34,20 +37,28 @@
         <img src="../assets/me8.png" alt="" class="home__img" />
       </div>
       <div class="home__social animate__animated animate__fadeInUp">
-        <a href="" target="_blank" class="home__social-link">
+        <a
+          href="https://www.linkedin.com/in/leticiayoles/"
+          target="_blank"
+          class="home__social-link"
+        >
           <fa :icon="['fab', 'linkedin']" />
         </a>
-        <a href="" target="_blank" class="home__social-link">
+        <a
+          href="https://github.com/leticiancalvess"
+          target="_blank"
+          class="home__social-link"
+        >
           <fa :icon="['fab', 'github']" />
         </a>
-        <a href="" target="_blank" class="home__social-link">
+        <a
+          href="https://www.facebook.com/leticianncalves/"
+          target="_blank"
+          class="home__social-link"
+        >
           <fa :icon="['fab', 'facebook']" />
         </a>
       </div>
-    </div>
-
-    <div id="demo">
-      <transition name="slide-fade"> </transition>
     </div>
   </section>
 </template>

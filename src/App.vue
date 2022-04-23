@@ -66,20 +66,20 @@ export default {
       const req = await fetch(`http://localhost:3000/titles`);
       const data = await req.json();
       this.mudarIdiomaIngles = data;
-      this.teste2();
+      this.nullPortugues();
     },
 
     async getTitlePortugues() {
       const req2 = await fetch(`http://localhost:3000/titles`);
       const data2 = await req2.json();
       this.mudarIdiomaPortugues = data2;
-      this.teste();
+      this.nullIngles();
     },
 
-    teste() {
+    nullIngles() {
       this.mudarIdiomaIngles = null;
     },
-    teste2() {
+    nullPortugues() {
       this.mudarIdiomaPortugues = null;
     },
   },

@@ -1,43 +1,37 @@
 {
   "titles": [
     {
+      "id": "1",
       "titleProjectsEnglish": "Ranek Project - Vue",
-      "descriptionProjectsEnglish": "The ranek project was developed with Vue.js and REST API.",
+      "descriptionProjectsEnglish": "The ranek project was developed simulating a website for buying and selling products, using Vue.js and REST API.",
 
       "titleProjectsPortuguese": "Projeto Ranek - Vue",
-      "descriptionProjectsPortuguese": "O projeto ranek foi desenvolvido com Vue.js e API REST.",
-      "img": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+      "descriptionProjectsPortuguese": "O projeto ranek foi desenvolvido simulando um site de compras e vendas de produtos, usando Vue.js e REST API.",
+      "img": "https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
+      "id": "2",
       "titleProjectsEnglish": "Techno Project - Vue",
-      "descriptionProjectsEnglish": "This is a test.",
-      "titleProjectsPortuguese": "Projecto Techno - Vue",
-      "descriptionProjectsPortuguese": "Esse é um teste",
-      "img": "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+      "descriptionProjectsEnglish": "This other project was also using vue.js and to simulate a sales site, however, using only json-server.",
+      "titleProjectsPortuguese": "Projeto Techno - Vue",
+      "descriptionProjectsPortuguese": "Este outro projeto também foi utilizando vue.js e para simular um site de vendas, entretanto, usando apenas json-server.",
+      "img": "https://images.unsplash.com/photo-1630476387426-52c6e0b14e50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "id": "3",
-      "titleEnglish": "Soft Skills",
-      "textEnglish": "I am a creative, proactive and dedicated person, analytical profile and continuous learning. Also, I like building effective team collaboration.",
       "titleProjectsEnglish": "Dogs Project - React",
-      "descriptionProjectsEnglish": "This is a test.",
-      "titlePortuguese": "Soft Skills",
-      "textPortuguese": "Sou uma pessoa criativa, proativa e dedicada, perfil analítico e aprendizado contínuo. Além disso, gosto de construir uma colaboração eficaz em equipe",
+      "descriptionProjectsEnglish": "Project made with React, which the objective was to create a social network to post photos of dogs.",
       "titleProjectsPortuguese": "Projeto Cachorros - React",
-      "descriptionProjectsPortuguese": "Esse é um teste",
-      "img": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      "descriptionProjectsPortuguese": "Projeto feito com  React no qual o objetivo foi criar uma rede social para postar fotos de cachorros.",
+      "img": "https://images.unsplash.com/photo-1558986377-c44f6a2b50f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
       "id": "4",
-      "titleEnglish": "Professional Goals",
-      "textEnglish": "Vue.js Complete, React, React with Redux, Javascript ES6, Bootcamp QA everis, Bootcamp HTML",
-      "titleProjectsEnglish": "Dogs Project - React",
-      "descriptionProjectsEnglish": "This is a test.",
-      "titlePortuguese": "Soft Skills",
-      "textPortuguese": "Sou uma pessoa criativa, proativa e dedicada, perfil analítico e aprendizado contínuo. Além disso, gosto de construir uma colaboração eficaz em equipe",
-      "titleProjectsPortuguese": "Projeto Cachorros - React",
-      "descriptionProjectsPortuguese": "Esse é um teste",
-      "img": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      "titleProjectsEnglish": "EPTA",
+      "descriptionProjectsEnglish": "Website developed for the Propulsion and Aerospace Technology Team (EPTA) of Federal University of Uberlândia.",
+      "titleProjectsPortuguese": "EPTA",
+      "descriptionProjectsPortuguese": "Site desenvolvido para a Equipe de Propulsão e Tecnologia Aeroespacial da Universidade Federal de Uberlândia",
+      "img": "https://images.unsplash.com/photo-1623520333087-62b8793e3d23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     }
   ],
   "aboutMe": [
