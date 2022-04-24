@@ -3,6 +3,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
 });
 module.exports = {
+  publicPath: '/portfolio-vue',
   configureWebpack: {
     module: {
       rules: [
