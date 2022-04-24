@@ -3,7 +3,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
 });
 module.exports = {
-  publicPath: '/portfolio-vue',
+  publicPath: process.env.NODE_ENV === 'production' ? '/portfolio-vue/' : '/',
   configureWebpack: {
     module: {
       rules: [
