@@ -10,7 +10,7 @@
         <h3 class="home__education">Front-end Developer | QA</h3>
 
         <div class="home__buttons">
-          <a download="" href="../assets/cv.pdf" class="button button--ghost">
+          <a href="./files/cv.pdf" download class="button button--ghost">
             Downlad CV
           </a>
           <a href="#about" class="button">About me</a>
@@ -26,7 +26,7 @@
         <h3 class="home__education">Front-end Developer | QA</h3>
 
         <div class="home__buttons">
-          <a download="" href="../assets/cv.pdf" class="button button--ghost">
+          <a href="./files/cv.pdf" download class="button button--ghost">
             Downlad CV
           </a>
           <a href="#about" class="button">Sobre Mim</a>

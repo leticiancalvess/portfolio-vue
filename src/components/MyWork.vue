@@ -45,7 +45,7 @@
                     {{ produtos.descriptionProjectsEnglish }}
                   </p>
                   <button class="modal_btn">View on Github</button>
-                  <button class="modal_fechar" @click="closeModal">X</button>
+                  <button class="modal_close" @click="closeModal">X</button>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@
                     {{ produtos.descriptionProjectsPortuguese }}
                   </p>
                   <button class="modal_btn">Ver no Github</button>
-                  <button class="modal_fechar" @click="closeModal">X</button>
+                  <button class="modal_close" @click="closeModal">X</button>
                 </div>
               </div>
             </div>
@@ -135,26 +135,6 @@ export default {
 
 <style scoped>
 /*=============== SERVICES ===============*/
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext');
-
-$main-color: #9191e9;
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-}
-
-@media screen and (max-width: 768px) {
-  html,
-  body {
-    font-size: 12px;
-  }
-}
 
 .skills__content {
   background-color: var(--container-color);
@@ -268,7 +248,6 @@ body {
   z-index: 1;
   display: grid;
   align-items: end;
-
   animation: fadeIn 0.3s forwards;
   width: 50%;
 }
@@ -284,7 +263,7 @@ body {
   }
 }
 
-.modal_fechar {
+.modal_close {
   border-radius: 50%;
   background-color: var(--first-color);
   width: 40px;
