@@ -116,7 +116,7 @@
             <div class="skills__data">
               <i class="bx bxs-badge-check"></i>
               <div>
-                <h3 class="skills__name">Bootstrap</h3>
+                <h3 class="skills__name">Javascript</h3>
                 <span class="skills__level">Intermediário</span>
               </div>
             </div>
@@ -184,11 +184,8 @@ export default {
   padding-right: 5px;
 }
 .skills__container {
-  row-gap: 3rem;
+  row-gap: 2rem;
   padding-top: 1rem;
-  column-gap: 3rem;
-  justify-content: center;
-  grid-template-columns: repeat(2, 450px);
 }
 .skills__content {
   background-color: var(--container-color);

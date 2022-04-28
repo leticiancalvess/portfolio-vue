@@ -99,7 +99,6 @@ export default {
   position: relative;
   row-gap: 4.5rem;
   padding-top: 2rem;
-  grid-template-columns: repeat(2, 1fr);
 }
 .home__data {
   text-align: center;

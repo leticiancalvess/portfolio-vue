@@ -25,7 +25,11 @@
         </ul>
       </div>
       <!--Theme Change Button-->
-      <button class="button" id="theme-button" @click="changeColor">
+      <button
+        class="button buttonChangeColor"
+        id="theme-button"
+        @click="changeColor"
+      >
         <fa icon="moon" />
       </button>
     </nav>

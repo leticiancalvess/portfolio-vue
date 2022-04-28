@@ -177,6 +177,229 @@ body.light-theme {
   }
 }
 
+@media screen and (max-width: 321px) {
+  .nav__menu {
+    padding: 1rem 1.5rem;
+  }
+
+  .home__button {
+    flex-direction: column;
+  }
+  .home__handle {
+    width: 300px !important;
+    height: 250px !important;
+  }
+  .home__img {
+    width: 300px !important;
+  }
+  .home__data {
+    margin: -20px;
+  }
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__description {
+    margin-left: 5px;
+  }
+  .skills__box {
+    column-gap: 1rem;
+  }
+
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+  .services__container {
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+  .work__item {
+    font-size: var(--small-font-size);
+  }
+  .work__filters {
+    column-gap: 0.25rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .buttonContactMe {
+    margin-left: 30% !important;
+  }
+  .about__description {
+    margin-left: 10px !important;
+  }
+  .buttonLanguage {
+    margin-left: 2rem;
+    margin-right: -1rem;
+  }
+}
+@media (min-width: 322px) and (max-width: 576px) {
+  .home__handle {
+    width: 350px !important;
+    height: 300px !important;
+  }
+  .home__img {
+    width: 350px !important;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .nav__menu {
+    width: 328px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .abot__info {
+    grid-template-columns: repeat(3, 140px);
+    justify-content: center;
+  }
+
+  .skills__container {
+    justify-content: center;
+  }
+  .skills__content {
+    padding: 2rem 4rem;
+  }
+  .services__container {
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+  }
+  .services__modal-content {
+    width: 500px;
+    padding: 4.5rem 2.5rem 2.5rem;
+  }
+  .services__modal-description {
+    padding: 0 3.5rem;
+  }
+  .work__container {
+    justify-content: center;
+  }
+  .work__img {
+    width: 295px;
+  }
+  .contact__info {
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+  .contact__form {
+    width: 360px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .work__container {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .about__info,
+  .about__description {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .buttonContactMe {
+    margin-left: 25%;
+  }
+  .contact__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section {
+    padding: 6.5rem 0 1rem;
+  }
+  .section__title {
+    margin-bottom: 3.5rem;
+  }
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+  .home__handle {
+    width: 500px;
+    height: 400px;
+  }
+  .home__img {
+    width: 330px;
+  }
+  .home__social-link {
+    padding: 0.4rem;
+    font-size: 1.25rem;
+  }
+  .home__social::after {
+    transform: rotate(90deg) translate(16px, 0);
+  }
+  .home__scroll-icon {
+    font-size: 2rem;
+  }
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+  }
+  .about__img {
+    width: 350px;
+  }
+  .about__data {
+    text-align: initial;
+  }
+  .about__info {
+    justify-content: initial;
+  }
+  .about__box {
+    text-align: center;
+    padding: 1rem 1.25rem;
+    width: 300px;
+  }
+  .about__description {
+    padding: 0 4rem 0 0;
+    margin-bottom: 2.5rem;
+  }
+  .skills__container {
+    column-gap: 3rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, 450px);
+  }
+  .services__container {
+    grid-template-columns: repeat(3, 192px);
+    column-gap: 3rem;
+  }
+  .services__card {
+    padding: 5rem 2rem 1.5rem;
+  }
+  .work__container {
+    gap: 3rem;
+    grid-template-columns: repeat(2, max-content);
+  }
+  .work__card {
+    padding: 1.25rem;
+  }
+
+  .work__title {
+    margin-bottom: 0.5rem;
+  }
+  .contact__container {
+    column-gap: 6rem;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+  }
+  .contact__info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__social-link {
+    font-size: 1.25rem;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+  }
+}
+
 /*=============== BASE ===============*/
 
 * {

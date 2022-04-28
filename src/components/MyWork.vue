@@ -144,9 +144,6 @@ export default {
 .skills__container {
   row-gap: 3rem;
   padding-top: 1rem;
-  column-gap: 3rem;
-  justify-content: center;
-  grid-template-columns: repeat(2, 450px);
 }
 .skills__box {
   display: flex;
@@ -227,7 +224,7 @@ export default {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -291,6 +288,7 @@ export default {
 .modal_dados {
   grid-column: 2;
   width: 400px;
+
   height: 100%;
 }
 .modal_preco {
@@ -310,6 +308,64 @@ export default {
   font-size: 1rem;
   padding: 10px 25px;
   border-radius: 0.5rem;
+}
+@media screen and (max-width: 576px) {
+  .modal_btn {
+    margin-top: 10% !important;
+    margin-bottom: 15% !important;
+    margin-left: -10% !important;
+  }
+  .modal_container {
+    background: white;
+    width: 80%;
+    border-radius: 5%;
+    margin-left: -13%;
+  }
+  .modal_close {
+    float: left;
+  }
+  .modal_dados {
+    grid-column: 1;
+    width: 100px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .modal_titulo {
+    font-size: 15px !important;
+    margin-left: 10px !important;
+    text-align: center;
+    width: 80%;
+    margin-top: -20px !important;
+  }
+  .modal_img {
+    width: 0px !important;
+  }
+  .modal_img img {
+    width: 0px !important;
+  }
+  .modal_preco {
+    color: var(--first-color);
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .modal_dados {
+    width: 400px;
+  }
+  .modal_container {
+    width: 80%;
+  }
+  .modal_img {
+    width: 300px !important;
+  }
+  .modal_img img {
+    width: 300px !important;
+  }
+  .modal_titulo {
+    margin-left: 10px !important;
+  }
 }
 
 @media screen and (max-width: 1400px) {

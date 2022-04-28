@@ -39,7 +39,7 @@
           <p class="about__description">
             {{ textProfile }}
           </p>
-          <a href="#contact" class="button">Contact Me</a>
+          <a href="#contact" class="button buttonContactMe">Contact Me</a>
         </div>
       </div>
       <div class="about__container container grid" v-if="mudarIdiomaPortugues">
@@ -72,7 +72,7 @@
           <p class="about__description">
             {{ textProfilePortuguese }}
           </p>
-          <a href="#contact" class="button">Contact Me</a>
+          <a href="#contact" class="button buttonContactMe">Me Contate</a>
         </div>
       </div>
     </span>
@@ -158,8 +158,6 @@ export default {
   background: #f1f1f1;
 }
 .about__container {
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
   column-gap: 4rem;
 }
 .about__img {

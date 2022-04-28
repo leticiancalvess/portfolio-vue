@@ -1,5 +1,5 @@
 <template>
-  <section class="contact section" id="contact">
+  <section class="about section" id="contact">
     <div v-if="mudarIdiomaIngles">
       <span class="section__subtitle">Get in touch</span>
       <h2 class="section__title">Contact Me</h2>
@@ -8,9 +8,9 @@
       <span class="section__subtitle">Entre em Contato</span>
       <h2 class="section__title">Me Contate</h2>
     </div>
-    <div class="about__container container grid" v-if="mudarIdiomaIngles">
+    <div class="contact__container container grid" v-if="mudarIdiomaIngles">
       <div class="about__data">
-        <div class="about__info">
+        <div class="contact__info">
           <div class="about__box">
             <h3 class="about__title">Email</h3>
             <span class="contact__card-data">leticiancalves@hotmail.com</span>
@@ -52,7 +52,7 @@
     </div>
     <div class="about__container container grid" v-if="mudarIdiomaPortugues">
       <div class="about__data">
-        <div class="about__info">
+        <div class="contact__info">
           <div class="about__box">
             <h3 class="about__title">Email</h3>
             <span class="contact__card-data">leticiancalves@hotmail.com</span>
@@ -125,32 +125,23 @@ export default {
   justify-content: center;
   column-gap: 0.25rem;
 }
-.about__container {
-  align-items: center;
-  column-gap: 4rem;
+.contact__container {
+  row-gap: 2.5rem;
+}
 
-  margin-top: -20px;
-}
-.about__img {
-  width: 350px;
-  justify-self: center;
-}
 .about__data {
-  text-align: initial;
+  text-align: center;
 }
-.about__info {
+.contact__info {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
   gap: 0.5rem;
   margin-bottom: 2rem;
-  text-align: initial;
 }
 .about__box {
   background-color: var(--container-color);
   border-radius: 0.75rem;
   padding: 1rem 1.25rem;
-  text-align: center;
-  width: 300px;
 }
 .about__icon {
   font-size: 1.5rem;
