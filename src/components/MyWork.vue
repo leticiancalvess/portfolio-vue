@@ -349,8 +349,7 @@ export default {
     margin-left: 10px;
   }
 }
-
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 920px) {
   .modal_dados {
     width: 400px;
   }
@@ -367,7 +366,6 @@ export default {
     margin-left: 10px !important;
   }
 }
-
 @media screen and (max-width: 1400px) {
   .modal_dados {
     grid-column: 2;
